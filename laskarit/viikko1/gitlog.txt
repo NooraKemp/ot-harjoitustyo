@@ -1,0 +1,112 @@
+commit e2b2386f43c523eae25fcbfa2e9c42d136b28995
+Author: Noora Kemppainen <noora.kemppainen@helsinki.fi>
+Date:   Mon Mar 7 08:59:23 2022 +0200
+
+    nimen vaihto
+
+ tiedostoja/{file2 => file22} | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit b647f86cba51148e8148ca6f008b92880437e320
+Author: Noora Kemppainen <noora.kemppainen@helsinki.fi>
+Date:   Mon Mar 7 08:58:05 2022 +0200
+
+    file1 poisto
+
+ tiedostoja/file1 | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit fd97a98fbfc94ffdc47df5a977b76549249e5d2c
+Author: Noora Kemppainen <noora.kemppainen@helsinki.fi>
+Date:   Mon Mar 7 08:43:10 2022 +0200
+
+    tiedostot luotu
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 2c0475d2ee60049b2a648c8756bc5c30908b674e
+Author: Noora Kemppainen <noora.kemppainen@helsinki.fi>
+Date:   Mon Mar 7 08:36:57 2022 +0200
+
+    muutoksia
+
+ eka.txt    | 2 +-
+ kolmas.txt | 1 +
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+commit d469e1826e5444074fde711d484fbe113b7564d1
+Author: Noora Kemppainen <noora.kemppainen@helsinki.fi>
+Date:   Mon Mar 7 08:31:22 2022 +0200
+
+    nimi muutettu
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 3a75fb12fc194e7257097e37f159bc5fa7c628e6
+Author: Noora Kemppainen <noora.kemppainen@helsinki.fi>
+Date:   Mon Mar 7 08:29:28 2022 +0200
+
+    toinen.txt poistettu
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 934580fc332e41d3cd90a4d0a28fc792aaee3e40
+Author: Noora Kemppainen <noora.kemppainen@helsinki.fi>
+Date:   Mon Mar 7 08:24:47 2022 +0200
+
+    tekstin lisäys
+
+ tiedosto.txt | 12 +++++++++++-
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+
+commit 28653fe2dd17cb66c17c56aa9468a1140d97b08c
+Author: Noora Kemppainen <noora.kemppainen@helsinki.fi>
+Date:   Mon Mar 7 08:19:30 2022 +0200
+
+    stuff ja jotain.txt luotu
+
+ stuff/jotain.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit af502a855e79e603725c90d04ab9edc12afd6533
+Author: Noora Kemppainen <noora.kemppainen@helsinki.fi>
+Date:   Mon Mar 7 08:17:47 2022 +0200
+
+    muutos
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 188a39c01e21fc0b3d6f4676c9ce7f820dfc8adb
+Author: Noora Kemppainen <noora.kemppainen@helsinki.fi>
+Date:   Mon Mar 7 08:16:25 2022 +0200
+
+    kolmas.txt luotu
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit db2f5ea4e9525434c8042e9f5c2f85370fb8dcbf
+Author: Noora Kemppainen <noora.kemppainen@helsinki.fi>
+Date:   Mon Mar 7 08:14:45 2022 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 8f4b90aeabb70260a90300e04d82f1eaf59a0841
+Author: Noora Kemppainen <noora.kemppainen@helsinki.fi>
+Date:   Mon Mar 7 08:12:34 2022 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
