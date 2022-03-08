@@ -1,5 +1,5 @@
 # Ohjelmistotekniikka/harjoitustyö
 ## Laskarit
 ### Viikko 1
-**Linkit _tiedostoihin_:**
+Linkit **_tiedostoihin_:**
 
