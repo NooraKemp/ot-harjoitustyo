@@ -2,14 +2,14 @@
 name = "unicafe"
 version = "0.1.0"
 description = ""
-authors = ["Kalle Ilves <kalle.ilves@helsinki.fi>"]
+authors = ["Noora Kemppainen <noora.kemppainen@helsinki.fi>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
 
 [tool.poetry.dev-dependencies]
-pytest = "^6.2.5"
-coverage = "^6.0.2"
+pytest = "^7.1.1"
+coverage = "^6.3.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
