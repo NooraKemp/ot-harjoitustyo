@@ -1,4 +1,6 @@
 # Ohjelmistotekniikka/harjoitustyö
+# Pygame Space Invaders
+Sovellus on Space Invaders-tyylinen peli.
 
 ## Dokumentaatio
 - [Vaatimusmäärittely](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
