@@ -10,6 +10,6 @@
 - [Tehtävä 1](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/laskarit/viikko3/luokkakaavio1.png)
 - [Tehtävä 2](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/laskarit/viikko3/luokkakaavio2.png)
 - [Tehtävä 3](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/laskarit/viikko3/sekvenssikaavio1.png)
-- [Tehtävä 4](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/laskarit/viikko3/sekvenssikaavio2.pn)
+- [Tehtävä 4](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/laskarit/viikko3/sekvenssikaavio2.png)
 
 
