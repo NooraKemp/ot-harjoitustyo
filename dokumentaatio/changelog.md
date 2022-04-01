@@ -4,5 +4,5 @@
 - Lisätty luokka GameLoop, joka pyörittää pelisilmukkaa
 - Lisätty luokka Game, joka vastaa pelin tilan hallinnasta
 - Lisätty luokat Sprite-olioille Background (taustakuva) ja Spaceship (avaruusalus)
-- Pelaaja voi liikuttaa avaruusalusta oikealle ja vasemalle
+- Pelaaja voi liikuttaa avaruusalusta oikealle ja vasemmalle
 - Testattu, että avaruusalus voi liikkua
