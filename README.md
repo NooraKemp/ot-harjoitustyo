@@ -4,12 +4,16 @@
 - [Vaatimusmäärittely](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 - [Työaikakirjanpito](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
-## Laskarit
-### Viikko 3
+## Komentorivintoiminnot
+### Ohjelman suorittaminen
+Ohjelma suoritetaan komennolla:
+poerty run invoke start
+### Testaus
+Testit suoritetaan komennolla:
+poetry run invoke test
+### Testikattavuus
+Testikattavuusraportti generoidaan komennolla:
+poetry run invoke coverage-report
 
-- [Tehtävä 1](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/laskarit/viikko3/luokkakaavio1.png)
-- [Tehtävä 2](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/laskarit/viikko3/luokkakaavio2.png)
-- [Tehtävä 3](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/laskarit/viikko3/sekvenssikaavio1.png)
-- [Tehtävä 4](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/laskarit/viikko3/sekvenssikaavio2.png)
 
 
