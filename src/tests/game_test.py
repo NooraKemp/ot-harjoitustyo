@@ -26,3 +26,10 @@ class TestGame(unittest.TestCase):
 
         self.game.move_spaceship(dx=-600)
         self.assert_placement_equal(spaceship, 500, 700)
+
+        self.game.move_spaceship(dx=600)
+        self.assert_placement_equal(spaceship, 500, 700)
+
+        
+
+
