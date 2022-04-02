@@ -1,6 +1,7 @@
 import unittest
 from services.game import Game
 
+
 class TestGame(unittest.TestCase):
     def setUp(self):
         self.game = Game()
@@ -18,4 +19,10 @@ class TestGame(unittest.TestCase):
         self.assert_placement_equal(spaceship, 500-15, 700)
 
         self.game.move_spaceship(dx=15)
+        self.assert_placement_equal(spaceship, 500, 700)
+
+    def test_spaceship_cant_move_outside_screen(self):
+        spaceship = self.game.spaceship
+
+        self.game.move_spaceship(dx=-600)
         self.assert_placement_equal(spaceship, 500, 700)

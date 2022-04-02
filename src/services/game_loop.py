@@ -1,5 +1,6 @@
 import pygame
 
+
 class GameLoop:
     """ A class that runs the game loop """
 
@@ -11,10 +12,10 @@ class GameLoop:
 
     def run(self):
         while True:
-            if self.events() == False:
+            if self.events() is False:
                 break
-             
-            self.clock.tick(60) 
+
+            self.clock.tick(60)
             self.render()
 
     def events(self):

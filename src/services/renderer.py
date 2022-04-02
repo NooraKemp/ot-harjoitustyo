@@ -1,7 +1,9 @@
 import pygame
 
+
 class Renderer:
     """ A class that renders the game view"""
+
     def __init__(self, display, game):
         self.display = display
         self.game = game
