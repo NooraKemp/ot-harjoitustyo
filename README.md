@@ -7,5 +7,10 @@ Sovellus on Space Invaders-tyylinen peli.
 - [Työaikakirjanpito](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 - [Changelog](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
 
+## Komentorivitoiminnot
+### Ohjelman suorittaminen:
+Ohjelma suoritetaan komennolla:
 
-
+```
+poetry run invoke start
+```
