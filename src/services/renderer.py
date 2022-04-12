@@ -9,5 +9,6 @@ class Renderer:
         self.game = game
 
     def render(self):
-        self.game.all_sprites.draw(self.display)
+        self.game.sprites.draw(self.display)
+        self.game.lasers.draw(self.display)
         pygame.display.update()

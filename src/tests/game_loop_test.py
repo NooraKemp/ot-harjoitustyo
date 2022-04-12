@@ -1,4 +1,5 @@
 import unittest
+import pygame
 
 from services.game import Game
 from services.game_loop import GameLoop
@@ -34,3 +35,20 @@ class StubEventQueue:
 class TestGameLoop(unittest.TestCase):
     def setUp(self):
         self.game = Game()
+
+    def test_game_can_be_over(self):
+        events = [
+            StubEvent(pygame.KEYDOWN, pygame.K_LEFT),
+            StubEvent(pygame.KEYDOWN, pygame.K_RIGHT)
+        ]
+
+        gameloop = GameLoop(
+            self.game,
+            StubRenderer(),
+            StubClock(),
+            StubEventQueue(events)
+        )
+
+        gameloop.run()
+
+        self.assertTrue(self.game.game_is_over())
