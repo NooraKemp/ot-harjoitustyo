@@ -14,19 +14,12 @@ class LeaderboardRepository:
         cursor.close()
         return high_score
 
-    def find_all(self):
-        cursor = self._connection.cursor()
-        cursor.execute('''
-            SELECT points FROM leaderboard''')
-        all_score = cursor.fetchall()
-        cursor.close()
-        return list(all_score)
-
     def create_new_score(self, name, points):
         ''' A method that creates a new score to the leaderboard database. '''
         cursor = self._connection.cursor()
         cursor.execute('''INSERT INTO leaderboard (name, points) VALUES (?, ?)''', [
             name, points])
+        self._connection.commit()
         cursor.close()
 
 

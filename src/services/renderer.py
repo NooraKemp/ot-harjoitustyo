@@ -19,11 +19,11 @@ class Renderer:
         self.game.enemy_lasers.draw(self.display)
         self.game.enemies.draw(self.display)
         self.points = self.font.render(
-            f"POINTS: {self.game.spaceship.points}", False, (255, 255, 255))
+            f'POINTS: {self.game.spaceship.points}', False, (255, 255, 255))
         self.lives = self.font.render(
-            f"LIVES: {self.game.spaceship.lives}", False, (255, 255, 255))
+            f'LIVES: {self.game.spaceship.lives}', False, (255, 255, 255))
         self.high_score = self.font.render(
-            f"HIGH SCORE: {self.game.high_score}", False, (255, 255, 255))
+            f'HIGH SCORE: {self.game.high_score}', False, (255, 255, 255))
         self.display.blit(self.points, (10, 10))
         self.display.blit(self.lives, (10, 30))
         self.display.blit(self.high_score, (800, 10))

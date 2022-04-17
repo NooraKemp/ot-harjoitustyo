@@ -119,16 +119,8 @@ class Game:
                     'player', self.spaceship.points)
                 return True
         if self.spaceship.lives <= 0:
-            # Tämä tulostaa 0 eli aiemmat tulokset eivät ole tietokannassa
-            self.all = self._leaderboard_repository.find_all()
-            print(len(self.all))
-
             self._leaderboard_repository.create_new_score(
                 'player', self.spaceship.points)
-
-            self.all = self._leaderboard_repository.find_all()
-            # Tässä kohtaa tulostaa 1 eli muka tallentuu tietokantaan
-            print(len(self.all))
             return True
 
         return False
