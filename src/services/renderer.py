@@ -23,7 +23,7 @@ class Renderer:
         self.lives = self.font.render(
             f'LIVES: {self.game.spaceship.lives}', False, (255, 255, 255))
         self.high_score = self.font.render(
-            f'HIGH SCORE: {self.game.high_score}', False, (255, 255, 255))
+            f'HIGH SCORE: {self.game.high_score[0]}', False, (255, 255, 255))
         self.display.blit(self.points, (10, 10))
         self.display.blit(self.lives, (10, 30))
         self.display.blit(self.high_score, (800, 10))
