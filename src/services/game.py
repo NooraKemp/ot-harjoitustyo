@@ -1,18 +1,26 @@
+from random import choice
 import pygame
 from sprites.background import Background
 from sprites.spaceship import Spaceship
 from sprites.enemy import Enemy
 from sprites.laser import Laser
+from repositories.leaderboard_repository import (
+    leaderboard_repository as default_leaderboard_repository)
 
 
 class Game:
-    def __init__(self):
+    def __init__(self, leaderboar_repository=default_leaderboard_repository):
         self.spaceship = None
         self.background = None
-        self.lasers = pygame.sprite.Group()
+        self.spaceship_lasers = pygame.sprite.Group()
         self.enemies = pygame.sprite.Group()
         self.enemy_moving_direction = 1
+        self.enemy_lasers = pygame.sprite.Group()
         self.sprites = pygame.sprite.Group()
+
+        self._leaderboard_repository = leaderboar_repository
+        self.high_score = self._leaderboard_repository.find_high_score()
+
         self.initialize_sprites()
 
     def move_spaceship(self, col=0, row=0):
@@ -36,15 +44,29 @@ class Game:
 
     def spaceship_shoot_laser(self, time):
         if self.spaceship.spaceship_can_shoot_laser(time):
-            self.lasers.add(Laser(self.spaceship.rect.x +
-                                  self.spaceship.width/2, self.spaceship.rect.y-20))
+            self.spaceship_lasers.add(Laser(self.spaceship.rect.x +
+                                            self.spaceship.width/2, self.spaceship.rect.y-20))
             self.spaceship.last_shoot_time = time
 
-    def move_spaceship_lasers(self, col=0, row=0):
-        for laser in self.lasers:
+    def move_all_lasers(self, col=0, row=0):
+        for laser in self.spaceship_lasers:
             laser.rect.move_ip(col, row)
+            for enemy in self.enemies:
+                colliding_spaceship_lasers = self.get_colliding_lasers(
+                    enemy, self.spaceship_lasers)
+                if colliding_spaceship_lasers:
+                    self.enemies.remove(enemy)
+                    self.spaceship.points += 10
             if laser.rect.y < 0:
-                self.lasers.remove(laser)
+                self.spaceship_lasers.remove(laser)
+        for laser in self.enemy_lasers:
+            laser.rect.move_ip(col, -row)
+            colliding_enemy_lasers = self.get_colliding_lasers(
+                self.spaceship, self.enemy_lasers)
+            if colliding_enemy_lasers:
+                self.spaceship.lives -= 1
+            if laser.rect.y > 800:
+                self.enemy_lasers.remove(laser)
 
     def enemies_set_up(self, color='red', col=100, row=100):
         for j in range(4):
@@ -78,12 +100,45 @@ class Game:
         for enemy in self.enemies:
             enemy.rect.y += 2
 
+    def enemy_shoot_laser(self, time):
+        shooting_enemy = choice(self.enemies.sprites())
+        if shooting_enemy.enemy_can_shoot_laser(time):
+            self.enemy_lasers.add(Laser(shooting_enemy.rect.x +
+                                  shooting_enemy.width/2, shooting_enemy.rect.y +
+                                  shooting_enemy.height))
+            for enemy in self.enemies:
+                enemy.last_shoot_time = time
+
+    def get_colliding_lasers(self, sprite, lasers):
+        return pygame.sprite.spritecollide(sprite, lasers, True)
+
     def game_is_over(self):
         for enemy in self.enemies:
             if enemy.rect.y >= 800 - enemy.height:
+                self._leaderboard_repository.create_new_score(
+                    'player', self.spaceship.points)
                 return True
+        if self.spaceship.lives <= 0:
+            # Tämä tulostaa 0 eli aiemmat tulokset eivät ole tietokannassa
+            self.all = self._leaderboard_repository.find_all()
+            print(len(self.all))
+
+            self._leaderboard_repository.create_new_score(
+                'player', self.spaceship.points)
+
+            self.all = self._leaderboard_repository.find_all()
+            # Tässä kohtaa tulostaa 1 eli muka tallentuu tietokantaan
+            print(len(self.all))
+            return True
 
         return False
+
+    def update_game(self, time):
+        if len(self.enemies) < 1:
+            self.enemies_set_up()
+        self.enemy_shoot_laser(time)
+        self.move_all_lasers(row=-4)
+        self.move_enemies()
 
     def initialize_sprites(self):
         self.spaceship = Spaceship(500, 700)
@@ -92,6 +147,5 @@ class Game:
 
         self.sprites.add(
             self.background,
-            self.spaceship,
-            self.enemies
+            self.spaceship
         )

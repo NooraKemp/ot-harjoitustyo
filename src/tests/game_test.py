@@ -1,6 +1,5 @@
 import unittest
 from services.game import Game
-from sprites.enemy import Enemy
 
 
 class TestGame(unittest.TestCase):
@@ -33,23 +32,21 @@ class TestGame(unittest.TestCase):
         self.assertEqual(self.game.spaceship_can_move(col=-15), True)
         self.assertEqual(self.game.spaceship_can_move(col=-15), True)
 
-    def test_spaceship_shoots_laser(self):
-        self.game.spaceship_shoot_laser(1000)
-        self.assertEqual(len(self.game.lasers), 1)
-
     def test_spaceship_can_shoot_laser_returs_correct_value(self):
         self.assertEqual(
             self.game.spaceship.spaceship_can_shoot_laser(1000), True)
         self.assertEqual(
             self.game.spaceship.spaceship_can_shoot_laser(1), False)
 
-    def test_spaceship_lasers_can_move(self):
+    def test_shooting_lasers(self):
         self.game.spaceship_shoot_laser(1000)
-        self.game.move_spaceship_lasers(row=-10)
-        for laser in self.game.lasers:
+        self.game.enemy_shoot_laser(1000)
+        self.game.move_all_lasers(row=-10)
+        for laser in self.game.spaceship_lasers:
             self.assertEqual(laser.rect.y, self.game.spaceship.rect.y-20-10)
-        self.game.move_spaceship_lasers(row=-800)
-        self.assertEqual(len(self.game.lasers), 0)
+        self.game.move_all_lasers(row=-800)
+        self.assertEqual(len(self.game.spaceship_lasers), 0)
+        self.assertEqual(len(self.game.enemy_lasers), 0)
 
     def test_move_enemies(self):
         self.game.move_enemies()

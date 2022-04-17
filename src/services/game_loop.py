@@ -17,13 +17,13 @@ class GameLoop:
                 break
 
             self.time = self.clock.get_ticks()
-            self.clock.tick(60)
-            self.game.move_spaceship_lasers(row=-4)
-            self.game.move_enemies()
+            self.game.update_game(self.time)
             self.render()
 
             if self.game.game_is_over() is True:
                 break
+
+            self.clock.tick(60)
 
     def events(self):
         for event in self.event_queue.get():

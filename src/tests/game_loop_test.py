@@ -15,7 +15,7 @@ class StubClock:
         pass
 
     def get_ticks(self):
-        0
+        return 0
 
 
 class StubEvent:
@@ -39,7 +39,8 @@ class TestGameLoop(unittest.TestCase):
     def test_game_can_be_over(self):
         events = [
             StubEvent(pygame.KEYDOWN, pygame.K_LEFT),
-            StubEvent(pygame.KEYDOWN, pygame.K_RIGHT)
+            StubEvent(pygame.KEYDOWN, pygame.K_RIGHT),
+            StubEvent(pygame.KEYDOWN, pygame.K_SPACE)
         ]
 
         gameloop = GameLoop(
