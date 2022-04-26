@@ -1,6 +1,8 @@
 # Arkkitehtuurikuvaus
 
 ## Rakenne
+Ohjelman koodin pakkausrakenne:
+
 ![pakkauskaavio](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/pakkauskaavio.png)
 
 ## Tietojen pysyväistallennus
