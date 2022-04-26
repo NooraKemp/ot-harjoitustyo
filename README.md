@@ -11,7 +11,7 @@ Sovellus on Space Invaders-tyylinen peli.
 ## Sovelluksen lataaminen
 Uusimman version lähdekoodi:
 
-[release](https://github.com/NooraKemp/ot-harjoitustyo/releases/tag/viikko5)
+[Release](https://github.com/NooraKemp/ot-harjoitustyo/releases/tag/viikko5)
 
 ## Asennus
 Asenna riippuvuudet komennolla:
