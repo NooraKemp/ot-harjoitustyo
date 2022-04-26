@@ -8,6 +8,11 @@ Sovellus on Space Invaders-tyylinen peli.
 - [Changelog](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
 - [Arkkitehtuurikuvaus](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
+## Sovelluksen lataaminen
+Uusimman version lähdekoodi:
+
+[release](https://github.com/NooraKemp/ot-harjoitustyo/releases/tag/viikko5)
+
 ## Asennus
 Asenna riippuvuudet komennolla:
 
