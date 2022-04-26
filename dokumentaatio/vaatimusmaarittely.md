@@ -10,8 +10,8 @@ Sovelluksella on vain yhden tyyppisiä käyttäjiä (pelaajat).
 - Käyttöliittymässä on kolme näkymää: aloitus-, peli - ja pelinpäättymisnäkymät.
 - Pelinäkymän alalaidassa on avaruusalus, joka on pelaajan pelihahmo. (tehty)
 - Ruudun keskivaiheilla on vihollisia, jotka liikkuvat oikealle ja vasemmalle, vaihtaen suuntaa, kun ne osuvat ruudun reunaan. (tehty)
-- Ruudun vasemmassa yläkulmassa näkyy pelaajan pistemäärä sekä elämien määrä.
-- Ruudun oikeassa yläkulmassa näkyy korkein pelissä saatu pistemäärä.
+- Ruudun vasemmassa yläkulmassa näkyy pelaajan pistemäärä sekä elämien määrä. (tehty)
+- Ruudun oikeassa yläkulmassa näkyy korkein pelissä saatu pistemäärä. (tehty)
 
 ## Perusversion toiminnallisuudet
 
@@ -20,14 +20,14 @@ Ruudulla on painike "Play", jota painamalla pelaaja pääsee pelaamaan peliä.
 
 ### Pelaaminen
 - Pelaaja liikuttaa ruudun alareunassa olevaa avaruusalusta, joka voi liikkua oikealla ja vasemmalle. (tehty)
-- Pelaaja ampuu vihollisia laserilla tarkoituksenaan tuhota niitä.
-- Pelaaja väistelee vihollisten ampumia lasereita.
-- Vihollisten tuhoaminen kasvattaa pelaajan pistemäärää.
-- Vihollisen laserin osuminen pelaajaa vähentää yhden elämän.
-- Jos pelaaja saa tuhottua kaikki viholliset, ruudulle ilmestyy uusi vihollisjoukko.
+- Pelaaja ampuu vihollisia laserilla tarkoituksenaan tuhota niitä. (tehty)
+- Pelaaja väistelee vihollisten ampumia lasereita. (tehty)
+- Vihollisten tuhoaminen kasvattaa pelaajan pistemäärää. (tehty)
+- Vihollisen laserin osuminen pelaajaa vähentää yhden elämän. (tehty)
+- Jos pelaaja saa tuhottua kaikki viholliset, ruudulle ilmestyy uusi vihollisjoukko. (tehty)
 
 ### Pelin päättyminen
-- Peli päättyy, kun pelaajan avaruusalus tuhoutuu eli kun elämien määrä on nolla.
+- Peli päättyy, kun pelaajan avaruusalus tuhoutuu eli kun elämien määrä on nolla. (tehty)
 - Pelin päätyttyä ruudulle tulee näkyviin teksti "Game over" sekä pelaajan pistemäärä.
 
 ## Jatkokehitysideat
