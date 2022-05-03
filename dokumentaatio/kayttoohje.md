@@ -1,8 +1,6 @@
 ### Käyttöohje
 Lataa projektin -tähän linkki- lähdekoodi.
 
-## Konfigurointi
-
 ## Ohjelman käynnistäminen
 Asenna ensin riippuvuudet komennolla:
 
@@ -25,18 +23,24 @@ poetry run invoke start
 ## Pelin aloittaminen
 Pelin aloitusnäkymä:
 
-Pelin pääsee aloittamaan klikkamalla hiirellä "Play"-painiketta.
+![mainmenu](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/main_menu.png)
+
+Pelin pääsee aloittamaan painamalla "Play"-painiketta.
 Ohjelman voi sulkea "Quit"-painikkeella.
 
 ## Pelaaminen
 Pelinäkymä:
 
-Avaruusalus liikuu oikealla ja vasemalle nuolinäppäimillä. Vihollisia ammutaan välilyöntinäppäimellä.
+![peli](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/game.png)
+
+Avaruusalus liikkuu oikealla ja vasemmalle nuolinäppäimillä. Vihollisia ammutaan välilyöntinäppäimellä.
 
 ## Pelin päätyttyä
 Näkymä pelin päätyttyä:
 
-Uuden pelin voi aloittaa klikkamalla hiirellä "Play"-painiketta.
+![gameover](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/game_over.png)
+
+Uuden pelin voi aloittaa painamalla "Play"-painiketta.
 Ohjelman voi sulkea "Quit"-painikkeella.
 Takaisin aloitusnäkymään pääsee painikkeella "Main menu".
 
