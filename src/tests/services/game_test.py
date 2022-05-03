@@ -63,3 +63,7 @@ class TestGame(unittest.TestCase):
             self.game.move_enemies()
             i += 1
         self.assertEqual(self.game.enemy_moving_direction, 1)
+
+    def test_game_resets(self):
+        self.game.reset_game()
+        self.assertEqual(self.game.spaceship.points, 0)

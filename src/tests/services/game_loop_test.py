@@ -6,7 +6,10 @@ from services.game_loop import GameLoop
 
 
 class StubRenderer:
-    def render(self):
+    def render_game(self):
+        pass
+
+    def render_main_menu(self):
         pass
 
 
@@ -33,10 +36,12 @@ class StubEventQueue:
 
 
 class TestGameLoop(unittest.TestCase):
+    '''A class for gameloop tests.'''
     def setUp(self):
         self.game = Game()
 
     def test_game_can_be_over(self):
+        # Ei toimi.
         events = [
             StubEvent(pygame.KEYDOWN, pygame.K_LEFT),
             StubEvent(pygame.KEYDOWN, pygame.K_RIGHT),
@@ -50,6 +55,6 @@ class TestGameLoop(unittest.TestCase):
             StubEventQueue(events)
         )
 
-        gameloop.run()
+        gameloop.run_game()
 
         self.assertTrue(self.game.game_is_over())

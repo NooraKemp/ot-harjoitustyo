@@ -2,6 +2,8 @@
 __pycache__
 .coverage
 htmlcov
+.pytest_cache
 
 #database
 leaderboard.db
+test-leaderboard.db

@@ -1,30 +1,32 @@
 import pygame
-pygame.font.init()
+from ui.main_menu_view import MainMenuView
+from ui.game_over_view import GameOverView
+from ui.game_view import GameView
 
 
 class Renderer:
-    """ A class that renders the game view"""
+    """ A class that renders the views"""
 
     def __init__(self, display, game):
         self.display = display
         self.game = game
-        self.font = pygame.font.SysFont('Helvetica', 18)
-        self.points = 0
-        self.high_score = 0
-        self.lives = 0
+        self.main_manu_view = MainMenuView(self.display)
+        self.game_over_view = GameOverView(self.display, self.game)
+        self.game_view = GameView(self.display, self.game)
 
-    def render(self):
+    def render_main_menu(self):
+        '''A method that renders the main menu view'''
         self.game.sprites.draw(self.display)
-        self.game.spaceship_lasers.draw(self.display)
-        self.game.enemy_lasers.draw(self.display)
-        self.game.enemies.draw(self.display)
-        self.points = self.font.render(
-            f'POINTS: {self.game.spaceship.points}', False, (255, 255, 255))
-        self.lives = self.font.render(
-            f'LIVES: {self.game.spaceship.lives}', False, (255, 255, 255))
-        self.high_score = self.font.render(
-            f'HIGH SCORE: {self.game.high_score[0]}', False, (255, 255, 255))
-        self.display.blit(self.points, (10, 10))
-        self.display.blit(self.lives, (10, 30))
-        self.display.blit(self.high_score, (800, 10))
+        self.main_manu_view.draw_main_menu()
+        pygame.display.update()
+
+    def render_game(self):
+        '''A method that renders the game view'''
+        self.game_view.draw_game_view()
+        pygame.display.update()
+
+    def render_game_over(self):
+        '''A method tht renders the game over view'''
+        self.game.sprites.draw(self.display)
+        self.game_over_view.draw_game_over_view()
         pygame.display.update()

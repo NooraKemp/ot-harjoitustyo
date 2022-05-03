@@ -1,10 +1,7 @@
-import os
 import sqlite3
-
-dirname = os.path.dirname(__file__)
-
-connection = sqlite3.connect(os.path.join(dirname, "..", "leaderboard.db"))
+from config import DATABASE_FILE_PATH
 
 
 def get_database_connection():
+    connection = sqlite3.connect(DATABASE_FILE_PATH)
     return connection
