@@ -6,7 +6,7 @@ from get_image import get_image
 
 class Background(pygame.sprite.Sprite):
     """A class that represents the background image.
-    
+
     Attributes:
         self.image: Background image.
     """

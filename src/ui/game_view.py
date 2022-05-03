@@ -7,11 +7,13 @@ class GameView:
     '''A class that represents the game view.'''
 
     def __init__(self, display, game):
+        '''A constructor that creates new game view.'''
         self.display = display
         self.game = game
         self.font = pygame.font.SysFont('Helvetica', 18)
 
     def draw_game_view(self):
+        '''A method that draws the game view sprites and text.'''
         self.game.sprites.draw(self.display)
         self.game.spaceship_lasers.draw(self.display)
         self.game.enemy_lasers.draw(self.display)

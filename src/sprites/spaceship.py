@@ -4,7 +4,7 @@ from get_image import get_image
 
 class Spaceship(pygame.sprite.Sprite):
     '''A class that represents the spaceship.
-    
+
     Atributes:
         self.image: Image of the spaceship.
         self.width: Width of the image.
@@ -30,7 +30,7 @@ class Spaceship(pygame.sprite.Sprite):
 
     def spaceship_can_shoot_laser(self, time):
         '''Checks if enough time has elapsed since the previous shot.
-        
+
         Returns: True, if enemy can shoot laser, otherwise False.'''
         if time-self.last_shoot_time < 800:
             return False

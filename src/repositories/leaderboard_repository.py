@@ -5,7 +5,7 @@ class LeaderboardRepository:
 
     def __init__(self, connection):
         """A class that represents the Leaderboard repository."
-    
+
         Attributes:
         self._connection = Database connection.
         """

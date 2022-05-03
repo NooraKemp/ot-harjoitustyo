@@ -34,7 +34,7 @@ class Enemy(pygame.sprite.Sprite):
 
     def enemy_can_shoot_laser(self, time):
         '''Checks if enough time has elapsed since the previous shot.
-        
+
         Returns: True, if enemy can shoot laser, otherwise False.'''
         if time-self.last_shot_time < 800:
             return False

@@ -5,6 +5,7 @@ from sprites.spaceship import Spaceship
 
 class TestLeaderboarRepository(unittest.TestCase):
     '''A class for the leaderboar repository tests.'''
+
     def setUp(self):
         leaderboard_repository.delete_all()
         self.spaceship = Spaceship(500, 700)

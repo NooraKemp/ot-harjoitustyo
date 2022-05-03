@@ -33,3 +33,4 @@
 - Pelin päättyessä aukeaa näkymä Game over, jossa näkyvät pelaajan saamat pisteet.
 - Game over näkymässä voi aloitaa uuden pelin, sulkea sovelluksen tai siirtyä näkymään Main manu.
 - Uuden pelin alkaessa edellinen peli resetoituu.
+- Gameloop-luokan testaaminen ei tällä hetkellä toimi.

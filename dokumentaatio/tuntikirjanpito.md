@@ -12,4 +12,7 @@
 | 14.4. | 7 h | Pelaajan pisteet ja elämät sekä näiden näkyminen peliruudulla. Tietokanna luominen ja siihen liittyviä toimintoja. |
 | 17.4. | 2 h | Tietokantaongelmien korjaus. |
 | 26.4. | 4 h | Dokumentaation päivitystä, sekvenssikaavio ja Github release. |
-| yht | 41 h | |
+| 27.4. | 4 h | Näkymät Main menu ja Game over. |
+| 29.4. | 4 h | Pelin resetointi uutta peliä varten. Tietokannan testaus. |
+| 3.5. | 6 h | Docstringit, käyttöohje ja arkkitehtuurinkuvauksen päivitys. |
+| yht | 55 h | |

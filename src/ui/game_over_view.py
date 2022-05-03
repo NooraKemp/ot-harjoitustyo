@@ -7,6 +7,7 @@ class GameOverView:
     '''A class that represents the game over view.'''
 
     def __init__(self, display, game):
+        '''A constructor that creates new game over view.'''
         self.display = display
         self.game = game
         self.font = pygame.font.SysFont('Helvetica', 100)
@@ -15,7 +16,7 @@ class GameOverView:
 
     def draw_game_over_view(self):
         '''A method that draws the game over view text and buttons.'''
-
+        self.game.sprites.draw(self.display)
         self.game_over = self.font.render(
             'GAME OVER', False, (255, 255, 255))
         self.points = self.points_font.render(

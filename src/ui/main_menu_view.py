@@ -6,14 +6,16 @@ pygame.font.init()
 class MainMenuView:
     '''A class that represents the main menu view.'''
 
-    def __init__(self, display):
+    def __init__(self, display, game):
+        '''A constructor that creates new main menu view.'''
         self.display = display
+        self.game = game
         self.font = pygame.font.SysFont('Helvetica', 100)
         self.button_font = pygame.font.SysFont('Helvetica', 50)
 
     def draw_main_menu(self):
         '''A method that draws the main menu view text and buttons.'''
-
+        self.game.sprites.draw(self.display)
         self.main_menu = self.font.render(
             'MAIN MENU', False, (255, 255, 255))
         pygame.draw.rect(self.display, (0, 0, 0), [300, 300, 400, 60])

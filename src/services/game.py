@@ -10,7 +10,7 @@ from repositories.leaderboard_repository import (
 
 class Game:
     '''A class that is responsible for application logic.
-    
+
     Attributes:
         self.background: Backgroud-sprite.
         self.spaceship: Spaceship-sprite.
@@ -49,6 +49,7 @@ class Game:
         '''Checks is spaceship can move.
         Returns: True, if spaceship can move, otherwise False.
         '''
+
         self.spaceship.rect.move_ip(col, row)
 
         if self.spaceship.rect.x < 0:
@@ -70,7 +71,7 @@ class Game:
 
     def move_all_lasers(self, col=0, row=0):
         '''Moves spaceahip lasers and enemy lasers,
-        checks collisions, updates points and lives, 
+        checks collisions, updates points and lives,
         removes enemy if it is hit by spaseship laser.
         '''
         for laser in self.spaceship_lasers:
@@ -147,7 +148,7 @@ class Game:
 
     def game_is_over(self):
         '''Checks if game is over.
-        Returns: True, if lives are less than 1 or 
+        Returns: True, if lives are less than 1 or
         enemy hits the bottom of the screen, otherwise False.
         '''
         for enemy in self.enemies:
