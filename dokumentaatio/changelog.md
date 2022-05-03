@@ -27,3 +27,9 @@
 - Pelaajan pisteet ja elämät sekä korkein pelissä saavutettu pistemäärä näkyvät ruudulla.
 - Pelin päätyessä pelaajan pisteet tallentuvat tietokantaan.
 
+## Viikko 6
+- Lisätty näkymät Main menu ja Game over.
+- Main menu-näkumässä pelaaja voi aloittaa pelin klikkaamalla hiirellä ruudun kohdasta "Play".
+- Pelin päättyessä aukeaa näkymä Game over, jossa näkyvät pelaajan saamat pisteet.
+- Game over näkymässä voi aloitaa uuden pelin, sulkea sovelluksen tai siirtyä näkymään Main manu.
+- Uuden pelin alkaessa edellinen peli resetoituu.
