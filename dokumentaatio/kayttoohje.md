@@ -1,4 +1,4 @@
-### Käyttöohje
+# Käyttöohje
 Lataa projektin -tähän linkki- lähdekoodi.
 
 ## Ohjelman käynnistäminen
