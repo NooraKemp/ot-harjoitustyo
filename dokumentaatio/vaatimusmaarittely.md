@@ -7,7 +7,7 @@ Sovellus on Space Invaders-tyylinen peli. Pelin tarkoituksena on saada kerätty�
 Sovelluksella on vain yhden tyyppisiä käyttäjiä (pelaajat).
 
 ## Käyttöliittymäluonnos
-- Käyttöliittymässä on kolme näkymää: aloitus-, peli - ja pelinpäättymisnäkymät.
+- Käyttöliittymässä on kolme näkymää: aloitus-, peli - ja pelinpäättymisnäkymät. (tehty)
 - Pelinäkymän alalaidassa on avaruusalus, joka on pelaajan pelihahmo. (tehty)
 - Ruudun keskivaiheilla on vihollisia, jotka liikkuvat oikealle ja vasemmalle, vaihtaen suuntaa, kun ne osuvat ruudun reunaan. (tehty)
 - Ruudun vasemmassa yläkulmassa näkyy pelaajan pistemäärä sekä elämien määrä. (tehty)
@@ -16,7 +16,7 @@ Sovelluksella on vain yhden tyyppisiä käyttäjiä (pelaajat).
 ## Perusversion toiminnallisuudet
 
 ### Ennen pelin alkua
-Ruudulla on painike "Play", jota painamalla pelaaja pääsee pelaamaan peliä.
+Ruudulla on painike "Play", jota painamalla pelaaja pääsee pelaamaan peliä. (tehty)
 
 ### Pelaaminen
 - Pelaaja liikuttaa ruudun alareunassa olevaa avaruusalusta, joka voi liikkua oikealla ja vasemmalle. (tehty)
@@ -28,7 +28,7 @@ Ruudulla on painike "Play", jota painamalla pelaaja pääsee pelaamaan peliä.
 
 ### Pelin päättyminen
 - Peli päättyy, kun pelaajan avaruusalus tuhoutuu eli kun elämien määrä on nolla. (tehty)
-- Pelin päätyttyä ruudulle tulee näkyviin teksti "Game over" sekä pelaajan pistemäärä.
+- Pelin päätyttyä ruudulle tulee näkyviin teksti "Game over" sekä pelaajan pistemäärä. (tehty)
 
 ## Jatkokehitysideat
 Perusversion lisäksi sovelluksessa voi olla myös seuraavat toiminnallisuudet:
