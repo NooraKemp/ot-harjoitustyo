@@ -1,5 +1,6 @@
 # Käyttöohje
-Lataa projektin -tähän linkki- lähdekoodi.
+Lataa projektin lähdekoodi täältä:
+[Release](https://github.com/NooraKemp/ot-harjoitustyo/releases/tag/viikko6)
 
 ## Ohjelman käynnistäminen
 Asenna ensin riippuvuudet komennolla:
