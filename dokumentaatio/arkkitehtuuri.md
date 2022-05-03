@@ -8,6 +8,14 @@ Ohjelman koodin pakkausrakenne:
 ## Tietojen pysyväistallennus
 Luokka LeaderboardRepository huolehtii tietojen tallentamisesta SQLite-tietokantaan. Pelissä saadut pisteet tallennetaan Leaderboard-tauluun. Taulu alustetaan initialize_database.py-tiedostossa.
 
+## Käyttöliittymä
+Käyttöliittymässä on kolme näkymää:
+- Aloitusnäkymä
+- Pelinäkymä
+- Pelinpäättymisnäkymä
+
+Käyttöliittymä on pyritty erottamaan sovelluslogiikasta. Näkymät on toteutettu omina luokkinaan Ui-hakemistoon ja niiden näyttämisestä vastaa Renderer-luokka.
+
 ## Toiminnallisuudet
 ### Avaruusaluksen laserin ampuminen
 Kun pelaaja ampuu avaruusaluksen laserin, sovelluksen toiminta etenee seuraavalla tavalla:
