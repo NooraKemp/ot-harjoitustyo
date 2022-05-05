@@ -4,15 +4,17 @@ Ohjelmaa on testattu unittestilla automatisoiduilla yksikkö- ja integraatiotest
 ## Yksikkö- ja integraatiotestaus
 
 ### Sovelluslogiikka
-Sovelluslogiikasta vastaavaa luokkaa Game testataan testituokalla TestGame. Testejä vasten alustetaan Game-olio.
+Sovelluslogiikasta vastaavaa luokkaa Game testataan testiluokalla [TestGame](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/src/tests/services/game_test.py). Testejä vasten alustetaan Game-olio.
 
-Luokkaa GameLoop testataan testiluokalla TestGameLoop.
+Luokkaa GameLoop testataan testiluokalla [TestGameLoop](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/src/tests/services/game_loop_test.py).
 
 ### Repositorio-luokka
-Repositorio-luokkaa LeaderboardRepository testataan testiluokalla TestLeaderboardRepository. Luokkaa testataan testitiedostolla, jonka nimi on konfiguroitu tiedostossa .env.test.
+Repositorio-luokkaa LeaderboardRepository testataan testiluokalla [TestLeaderboarRepository](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/src/tests/repositories/leaderboard_repository_test.py). Luokkaa testataan testitiedostolla, jonka nimi on konfiguroitu tiedostossa .env.test.
 
 ### Testikattavuus
 Testauksen haarautumiskattavuus on 79%:
+
+![teskikattavuus](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/coverage_report.png)
 
 Testikattavuuden ulkopuolelle on jätetty pakkaus "ui" sekä tiedostot renderer.py, clock.py ja event_queue.py.
 
