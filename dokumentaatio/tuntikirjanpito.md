@@ -15,4 +15,6 @@
 | 27.4. | 4 h | Näkymät Main menu ja Game over. |
 | 29.4. | 4 h | Pelin resetointi uutta peliä varten. Tietokannan testaus. |
 | 3.5. | 6 h | Docstringit, käyttöohje ja arkkitehtuurinkuvauksen päivitys. |
-| yht | 55 h | |
+| 4.5. | 3 h| Yritin miettiä miten testata Gameloop-luokkaa, mutta se osoittautui hankalaksi. |
+| 5.5. | 4 h | Dokumentaation päivitys loppupalautusta varten. |
+| yht | 62 h | |
