@@ -6,7 +6,7 @@ Sovellus on Space Invaders-tyylinen peli. Pelin tarkoituksena on saada kerätty�
 ## Käyttäjät
 Sovelluksella on vain yhden tyyppisiä käyttäjiä (pelaajat).
 
-## Käyttöliittymäluonnos
+## Käyttöliittymä
 Käyttöliittymässä on kolme näkymää: aloitus-, peli - ja pelinpäättymisnäkymät.
 
 ### Aloitusnäkymä
