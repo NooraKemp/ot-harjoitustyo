@@ -2,12 +2,16 @@
 # Pygame Space Invaders
 Sovellus on Space Invaders-tyylinen peli.
 
+## Huomio Python-versiosta
+Sovelluksen toimintaa on testattu Python 3.8 versiolla.
+
 ## Dokumentaatio
 - [Vaatimusmäärittely](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 - [Työaikakirjanpito](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 - [Changelog](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
 - [Arkkitehtuurikuvaus](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 - [Käyttöohje](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+- [Testausdokumentti](https://github.com/NooraKemp/ot-harjoitustyo/blob/master/dokumentaatio/testaus.md)
 
 ## Sovelluksen lataaminen
 Uusimman version lähdekoodi:
