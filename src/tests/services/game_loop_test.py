@@ -12,6 +12,9 @@ class StubRenderer:
     def render_main_menu(self):
         pass
 
+    def render_game_over(self):
+        pass
+
 
 class StubClock:
     def tick(self, fps):
@@ -35,17 +38,18 @@ class StubEventQueue:
         return self.events
 
 
-'''class TestGameLoop(unittest.TestCase):
-
+class TestGameLoop(unittest.TestCase):
+    '''A class for the gameloop-class tests.'''
     def setUp(self):
         self.game = Game()
 
-    def test_game_can_be_over(self):
-        # Ei toimi.
+    def test_correct_boolean_values(self):
+
         events = [
             StubEvent(pygame.KEYDOWN, pygame.K_LEFT),
             StubEvent(pygame.KEYDOWN, pygame.K_RIGHT),
-            StubEvent(pygame.KEYDOWN, pygame.K_SPACE)
+            StubEvent(pygame.KEYDOWN, pygame.K_SPACE),
+            StubEvent(pygame.QUIT, None)
         ]
 
         gameloop = GameLoop(
@@ -55,6 +59,8 @@ class StubEventQueue:
             StubEventQueue(events)
         )
 
-        gameloop.run_game()
+        gameloop.run()
 
-        self.assertFalse(self.game.game_is_over())'''
+        self.assertTrue(gameloop.show_main)
+        self.assertFalse(gameloop.show_game)
+        self.assertFalse(gameloop.show_game_over)

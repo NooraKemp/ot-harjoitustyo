@@ -3,6 +3,7 @@ from services.game import Game
 
 
 class TestGame(unittest.TestCase):
+    '''A class for the Game-class tests.'''
     def setUp(self):
         self.game = Game()
 

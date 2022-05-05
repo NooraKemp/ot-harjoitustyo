@@ -16,3 +16,11 @@ class TestLeaderboarRepository(unittest.TestCase):
             'player', self.spaceship.points)
         score = leaderboard_repository.find_high_score()
         self.assertEqual(score[0], 10)
+
+    def test_find_high_score(self):
+        leaderboard_repository.create_new_score(
+            'player', self.spaceship.points)
+        leaderboard_repository.create_new_score(
+            'player', self.spaceship.points + 90)
+        score = leaderboard_repository.find_high_score()
+        self.assertEqual(score[0], 100)

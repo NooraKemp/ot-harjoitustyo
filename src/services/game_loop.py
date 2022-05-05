@@ -70,6 +70,7 @@ class GameLoop:
                     self.game.move_spaceship(col=15)
                 if event.key == pygame.K_SPACE:
                     self.game.spaceship_shoot_laser(self.time)
+
             if event.type == pygame.MOUSEBUTTONDOWN:
                 if 350 <= self.mouse[0] <= 650 and 300 <= self.mouse[1] <= 360:
                     if self.game.game_is_over() is True:
