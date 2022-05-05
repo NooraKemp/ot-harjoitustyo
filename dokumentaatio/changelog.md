@@ -34,3 +34,6 @@
 - Game over näkymässä voi aloitaa uuden pelin, sulkea sovelluksen tai siirtyä näkymään Main manu.
 - Uuden pelin alkaessa edellinen peli resetoituu.
 - Gameloop-luokan testit eivät tällä hetkellä toimi.
+
+## Loppupalautus
+- Gameloop-luokkaan lisätty yksi testi.
