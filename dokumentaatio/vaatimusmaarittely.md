@@ -11,6 +11,7 @@ Käyttöliittymässä on kolme näkymää: aloitus-, peli - ja pelinpäättymisn
 
 ### Aloitusnäkymä
 Aloitusnäkymässä ruudulla on teksti "MAIN MENU" sekä kaksi painiketta.
+
 Painikkeet:
 - "PLAY": Aloittaa pelin.
 - "QUIT": Sulkee sovelluksen.
@@ -24,6 +25,7 @@ Painikkeet:
 
 ### Pelinpäättymisnäkymä
 Pelinpäättymisnäkymässä ruudulla on teksti "GAME OVER" sekä kolme painiketta.
+
 Painikkeet:
 - "PLAY": Aloittaa uuden pelin.
 - "QUIT": Sulkee sovelluksen.
