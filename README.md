@@ -49,7 +49,7 @@ poetry run invoke start
 Testit suoritetaan komennolla:
 
 ```
-poetry rin invoke test
+poetry run invoke test
 ```
 
 ### Testikattavuus
