@@ -27,4 +27,4 @@ Kun pelaaja ampuu avaruusaluksen laserin, sovelluksen toiminta etenee seuraavall
 Pelaaja painaessa välilyöntinäppäintä tarkistetaan ensin koska avaruusalus on viimeksi ampunut laserin. Mikäli edellistä ampumisesta on kulunut riittävästi aikaa spaceship_can_shoot_laser palauttaa arvon True. Ryhmään spaceship_lasers lisätään uusi Laser, joka sijainti peliruudulla määrittyy avaruusaluksen sijainnin mukaan. Avaruusaluksen last_shoot_time aika päivitetään.
 
 # Rakenteeseen jääneet heikkoudet
-Gameloop-luokan olisi voinut toteuttaa eri tavalla, jotta sen testaaminen olisi ollut helpompaa. Nyt sen testaaminen jäi vähäiseksi. Luokissa Gameloop ja Game on liikkaa attribuutteja.
+Gameloop-luokan olisi voinut toteuttaa eri tavalla, jotta sen testaaminen olisi ollut helpompaa. Nyt sen testaaminen jäi vähäiseksi. Luokissa Gameloop ja Game on liikaa attribuutteja.
