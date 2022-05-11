@@ -1,6 +1,6 @@
 # Käyttöohje
 Lataa projektin lähdekoodi täältä:
-[Release](https://github.com/NooraKemp/ot-harjoitustyo/releases/tag/viikko6)
+[Release](https://github.com/NooraKemp/ot-harjoitustyo/releases/tag/loppupalautus)
 
 ## Ohjelman käynnistäminen
 Asenna ensin riippuvuudet komennolla:
