@@ -16,7 +16,7 @@ Sovelluksen toimintaa on testattu Python 3.8 versiolla.
 ## Sovelluksen lataaminen
 Uusimman version lähdekoodi:
 
-[Release](https://github.com/NooraKemp/ot-harjoitustyo/releases/tag/viikko6)
+[Release](https://github.com/NooraKemp/ot-harjoitustyo/releases/tag/loppupalautus)
 
 ## Asennus
 Asenna riippuvuudet komennolla:
